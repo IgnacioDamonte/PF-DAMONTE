@@ -5,9 +5,8 @@
 @import 'contacto';
 @import 'vars';
 
-@media screen and (max-width: 576px) {
-    header {
-   
+@media (max-width: 576px) {
+    header {   
         background-color: $maincolor;
         font-size: 20px;
         nav {

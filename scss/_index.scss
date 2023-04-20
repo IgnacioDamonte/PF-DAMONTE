@@ -101,11 +101,15 @@ h1 {
                 padding-right: 50px;
             }
     }
-    .video {
+    .container-video {
         margin-top: 50px; 
         margin-left: 250px;
         margin-bottom: 50px;
         margin-right: 33px;
+        .card-video {
+            width: 560px; 
+            height: 315px; 
+        }
     }                
 }
 .footer1 {

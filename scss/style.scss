@@ -99,26 +99,88 @@ span {
 
 /* celu */
 
-@media screen and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 575px) {
     header {
-   
+        display: flex;
+        justify-content: space-around;
+        font-size: 7px;   
+    }
+    .logo-index {
+        width: 80px;
+        height: auto;
+    }
+    .section1 {
         background-color: $maincolor;
-        font-size: 20px;
-        nav {
+        .padre1 {
             display: flex;
-            justify-content: center;
-            ul {
-                list-style-type: none;
-                text-decoration: none;
-                li {
-                    display: inline-block;
-                    padding: 0 10px;
-                    a {
-                        color: #9e9999;
-                    }
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 70px;
+            margin-bottom: 52px;
+            div {
+                .txtindex {
+                    display: flex;
+                    justify-content: center;
                 }
+                    .texto1 {
+                        border: $border;
+                        height: 2px;
+                        margin: 10px;
+                        padding: 40px;
+                        text-align: center;
+                        color: white;
+                        padding-top: 10px;
+                        font-size: 25px;
+                        margin-top: 35px;
+                        padding-left: 20px;
+                    }
+                        .textoindex {
+                            display: flex;
+                            text-align: center;
+                            margin-left: 50px;
+                            margin-right: 50px;
+                        }
             }
+            .imagenindex {
+                display: flex;
+                width: 230px;
+                margin-left: 45px;
+            }
+                                   
         }
     }
+    .fondo2 {
+        background-image: url(../IMG/bares-speakeasy-mexico.gif);
+        display: flex;
+        flex-wrap: wrap;
+        
+        div {
+            .h4 {
+                order: 3px solid white;
+                height: 2px;
+                margin: 35px 10px 10px;
+                padding: 10px 40px 40px;
+                text-align: center;
+                color: rgb(253, 253, 253);
+                font-size: 25px;
+            }
+                .textoindex2 {
+                    color: #f8f4f4;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    text-align: center;
+                   
+                }
+        }
+        .container-video {
+           height: auto;
+       
+            .card-video {
+                width: 335px;
+                height: 200px;
+            }
+        }                
+    }
 }
+
     

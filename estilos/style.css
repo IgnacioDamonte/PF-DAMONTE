@@ -97,11 +97,15 @@ h1 {
   padding-left: 50px;
   padding-right: 50px;
 }
-.fondo2 .video {
+.fondo2 .container-video {
   margin-top: 50px;
   margin-left: 250px;
   margin-bottom: 50px;
   margin-right: 33px;
+}
+.fondo2 .container-video .card-video {
+  width: 560px;
+  height: 315px;
 }
 
 .footer1 {
@@ -847,25 +851,79 @@ span {
 /* media queries */
 /* tablet */
 /* celu */
-@media screen and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 575px) {
   header {
-    background-color: #5a0f0f;
-    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 7px;
   }
-  header nav {
+  .logo-index {
+    width: 80px;
+    height: auto;
+  }
+  .section1 {
+    background-color: #5a0f0f;
+  }
+  .section1 .padre1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 52px;
+  }
+  .section1 .padre1 div .txtindex {
     display: flex;
     justify-content: center;
   }
-  header nav ul {
-    list-style-type: none;
-    text-decoration: none;
+  .section1 .padre1 div .texto1 {
+    border: 3px solid white;
+    height: 2px;
+    margin: 10px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-size: 25px;
+    margin-top: 35px;
+    padding-left: 20px;
   }
-  header nav ul li {
-    display: inline-block;
-    padding: 0 10px;
+  .section1 .padre1 div .textoindex {
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
   }
-  header nav ul li a {
-    color: #9e9999;
+  .section1 .padre1 .imagenindex {
+    display: flex;
+    width: 230px;
+    margin-left: 45px;
+  }
+  .fondo2 {
+    background-image: url(../IMG/bares-speakeasy-mexico.gif);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fondo2 div .h4 {
+    order: 3px solid white;
+    height: 2px;
+    margin: 35px 10px 10px;
+    padding: 10px 40px 40px;
+    text-align: center;
+    color: rgb(253, 253, 253);
+    font-size: 25px;
+  }
+  .fondo2 div .textoindex2 {
+    color: #f8f4f4;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+  }
+  .fondo2 .container-video {
+    height: auto;
+  }
+  .fondo2 .container-video .card-video {
+    width: 335px;
+    height: 200px;
   }
 }
 

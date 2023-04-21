@@ -29,86 +29,86 @@ h1 {
     color: #868080;
     text-align: center;
     font-size: 20px;
-    background-color: #5a0f0f;
+    background-color: $maincolor;
     display: flex;
     align-items: end;
     justify-content: space-around;
     padding-bottom: 160px;
-}
-.footer2 {
-    color: #868080;
-    text-align: center;
-    font-size: 20px;
-    background-color: #5a0f0f;
-    display: flex;
-    align-items: end;
-    justify-content: space-around;
-    padding-bottom: 160px;
-    margin-top: 80px;
-}
-h5 {
-    margin-top: 25px;
-}
-.h5-1 {
-    position: relative;
-    top: 60px
-}
-.h5-2 {
-    position: relative;
-    top: 60px
-}
-.h5-3 {
-    position: relative;
-    top: 65px    
-}
-.botones {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
-}
-.botones2 {
-    position: relative;
-    bottom: 25px;
-    left: 16px
-}
-.botones3 {
-    position: relative;
-    left: 16px;
-    bottom: 25px;
-}
-
-span {
-    font-size: 15px;
-}
-.derechos {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 99%;
-    background-color: #868080;
-    padding: 6px;
-    color: #5a0f0f;
-    text-shadow: none;
+    div {
+        .h5-1 {
+            position: relative;
+            top: 60px;
+        }
+    }
+    div{
+        .h5-2 {
+            position: relative;
+            top: 60px;
+        }
+    }
+    div{
+        .h5-3 {
+            position: relative;
+            top: 65px;
+        }
+            .botones {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 15px;
+            }   
+                .botones2 {
+                    position: relative;
+                    bottom: 25px;
+                    left: 16px;
+                }
+                    .botones3 {
+                        position: relative;
+                        left: 16px;
+                        bottom: 25px;
+                    }  
+    }
+    .derechos {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #868080;
+        padding: 6px;
+        color: $maincolor;
+        text-shadow: none;
+    }                               
 }
 
 
 /* media queries */
 
-/* tablet */
-
-
 /* celu */
 
-@media only screen and (min-width: 320px) and (max-width: 575px) {
-    header {
-        display: flex;
-        justify-content: space-around;
-        font-size: 7px;   
+
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    header {        
+        
+        nav {
+            text-decoration: none;
+            ul {
+                width: 100%;
+                margin: 0%;
+                padding: 0%;
+                padding-bottom: 1%;    
+                display: flex;
+                justify-content: space-around;
+                li {
+                    display: inline-block;
+                    padding: 0%;
+                    margin-right: 1px;
+                }
+            }
+        }   
     }
-    .logo-index {
-        width: 80px;
-        height: auto;
-    }
+ 
+    //index
+
     .section1 {
         background-color: $maincolor;
         .padre1 {
@@ -144,7 +144,8 @@ span {
             .imagenindex {
                 display: flex;
                 width: 230px;
-                margin-left: 45px;
+                margin-left: 145px;
+                
             }
                                    
         }
@@ -174,13 +175,587 @@ span {
         }
         .container-video {
            height: auto;
-       
+           margin: 0;
             .card-video {
                 width: 335px;
                 height: 200px;
             }
         }                
     }
-}
 
+    //comidas y  bebidas
+
+    .divmenues {
+        background-size: 20px;
+        .menues {
+            display: flex;justify-content: center;
+            color: aliceblue;
+            font-size: 55px;
+        }
+    }
+    .menu {
+        font-size: 27px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 39px;
+        color: $maincolor;
+    }
     
+    .contenedor {        
+        display: flex;
+        flex-wrap: wrap;
+        .contenedor-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            background-color: $maincolor;
+            padding-bottom: 200px;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-right: 50px;
+            div{
+                .classh4 {
+                    text-align: center;
+                    color: white;            
+                    font-size: 32px;
+                }
+                    .precios {
+                        text-align: center;
+                        font-size: 28px;
+                    }
+                        .botones-ic {
+                            display: flex;
+                            justify-content: space-around;
+                            position: relative;
+                            top: 50px;
+                        }
+                            .ingredientes {                        
+                                text-decoration: none;
+                                color: #000;
+                                font-size: 1rem;
+                                font-weight: 400;
+                                font-style: italic;
+                                text-align: center;
+                                border-radius: 10px;
+                                padding: 15px;
+                                border-color: transparent;                       
+                                color: $maincolor;
+                            
+                            }
+                                .carrito {                            
+                                    width: 57px;
+                                    height: 48px;
+                                    color: $maincolor;
+                                }
+            }
+                   
+        }               
+            
+    }                            
+           
+    .contenedor1 {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        color: $maincolor2;
+    }
+    
+    .contenedor2 {
+        display: flex;
+        flex-wrap: wrap;
+        .contenedor2-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            background-color: $maincolor2;
+            padding-bottom: 200px;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-right: 50px;
+            div { 
+                .classh4 {
+                    text-align: center;
+                    color: white;
+                    
+                    font-size: 32px;
+                }
+                    .precios {
+                        text-align: center;
+                        font-size: 28px;
+                    }
+                        .botones-ic {
+                            display: flex;
+                            justify-content: space-around;
+                            position: relative;
+                            top: 50px;
+                        }
+                            .ingredientes {                        
+                                text-decoration: none;
+                                color: #000;
+                                font-size: 1rem;
+                                font-weight: 400;
+                                font-style: italic;
+                                text-align: center;
+                                border-radius: 10px;
+                                padding: 15px;
+                                border-color: transparent;                       
+                                color: $maincolor;
+                            }
+                                .carrito {                            
+                                    width: 57px;
+                                    height: 48px;
+                                    color: $maincolor;
+                                } 
+            }               
+            
+        }   
+    }
+
+        //giftcard
+
+        .giftcard {
+            background-image: url(../IMG/bares-extranjeros-0.jpg);
+            background-size: cover;
+            div{
+                .gift {
+                    padding: 0%;
+                }
+                .texto2 {
+                    text-align: center;
+                    top: 40%;
+                    padding-top: 10%;
+                    font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            } 
+            div{ 
+                .giftcardimg {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .imagecard {
+                       display: flex;
+                    }
+                    .imagecard:hover {
+                        transform: translateY(-10px);
+                    }
+                }        
+            }    
+        }
+
+        //contacto
+        .fondo__contacto {
+            background-image: url(../IMG/clipping_MSvJ5N_b654.webp);
+            .titulo {
+                top: 20%;
+                color: aliceblue;        
+            }
+            .contacto {
+                width: 100%;
+            } 
+        }
+
+    //footer
+    .footer1 {
+        color: #868080;
+        text-align: center;
+        font-size: 9px;
+        background-color: $maincolor;
+        display: flex;
+        align-items: end;
+        justify-content: space-around;
+        padding-bottom: 160px;
+        div {
+            .h5-1 {
+                position: relative;
+                top: 60px;
+            }
+        }
+        div{
+            .h5-2 {
+                position: relative;
+                top: 60px;
+            }
+        }
+        div{
+            .h5-3 {
+                position: relative;
+                top: 78px;
+                
+            }
+                .botones {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 15px;
+                    position: relative;
+                    left: 10px;
+                    bottom: 5px;
+               
+                }   
+                    .botones2 {
+                        position: relative;
+                        
+                        left: 16px;
+                        
+                    }
+                        .botones3 {
+                            position: relative;
+                            left: 16px;
+                        
+                            
+                        }  
+        }
+        .derechos {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #868080;
+            padding: 6px;
+            color: $maincolor;
+            text-shadow: none;
+        }                  
+    }
+}    
+
+//tablet
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    header {        
+        
+        nav {
+            text-decoration: none;
+            ul {
+                width: 100%;
+                margin: 0%;
+                padding: 0%;
+                padding-bottom: 1%;    
+                display: flex;
+                justify-content: space-around;
+                li {
+                    display: inline-block;
+                    padding: 0%;
+                    margin-right: 1px;
+                }
+            }
+        }   
+    }
+
+    //index
+
+    .section1 {
+        background-color: $maincolor;
+        .padre1 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 70px;
+            margin-bottom: 52px;
+            div {
+                .txtindex {
+                    display: flex;
+                    justify-content: center;
+                }
+                    .texto1 {
+                        border: $border;
+                        height: 2px;
+                        margin: 10px;
+                        padding: 40px;
+                        text-align: center;
+                        color: white;
+                        padding-top: 10px;
+                        font-size: 25px;
+                        margin-top: 35px;
+                        padding-left: 20px;
+                    }
+                        .textoindex {
+                            display: flex;
+                            text-align: center;
+                            margin-left: 50px;
+                            margin-right: 50px;
+                        }
+            }
+            .imagenindex {
+                display: flex;
+                width: 230px;
+                margin-left: 145px;
+                display: none;
+                animation: none;
+            }
+                                   
+        }
+    }
+    .fondo2 {
+        background-image: url(../IMG/bares-speakeasy-mexico.gif);
+        display: flex;
+        flex-wrap: wrap;
+        
+        div {
+            .h4 {
+                order: 3px solid white;
+                height: 2px;
+                margin: 35px 10px 10px;
+                padding: 10px 40px 40px;
+                text-align: center;
+                color: rgb(253, 253, 253);
+                font-size: 25px;
+            }
+                .textoindex2 {
+                    color: #f8f4f4;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    text-align: center;
+                }
+        }
+        .container-video {
+           height: auto;
+           margin: 0;
+            .card-video {
+                width: 335px;
+                height: 200px;
+            }
+        }                
+    }
+
+    //comidas y  bebidas
+
+    .divmenues {
+        background-size: 20px;
+        .menues {
+            display: flex;justify-content: center;
+            color: aliceblue;
+            font-size: 55px;
+        }
+    }
+    .menu {
+        font-size: 27px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 39px;
+        color: $maincolor;
+    }
+    
+    .contenedor {        
+        display: flex;
+        flex-wrap: wrap;
+        .contenedor-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            background-color: $maincolor;
+            padding-bottom: 200px;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-right: 50px;
+            div{
+                .classh4 {
+                    text-align: center;
+                    color: white;            
+                    font-size: 32px;
+                }
+                    .precios {
+                        text-align: center;
+                        font-size: 28px;
+                    }
+                        .botones-ic {
+                            display: flex;
+                            justify-content: space-around;
+                            position: relative;
+                            top: 50px;
+                        }
+                            .ingredientes {                        
+                                text-decoration: none;
+                                color: #000;
+                                font-size: 1rem;
+                                font-weight: 400;
+                                font-style: italic;
+                                text-align: center;
+                                border-radius: 10px;
+                                padding: 15px;
+                                border-color: transparent;                       
+                                color: $maincolor;
+                            
+                            }
+                                .carrito {                            
+                                    width: 57px;
+                                    height: 48px;
+                                    color: $maincolor;
+                                }
+            }
+                   
+        }               
+            
+    }                            
+           
+    .contenedor1 {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        color: $maincolor2;
+    }
+    
+    .contenedor2 {
+        display: flex;
+        flex-wrap: wrap;
+        .contenedor2-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            background-color: $maincolor2;
+            padding-bottom: 200px;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-right: 50px;
+            div { 
+                .classh4 {
+                    text-align: center;
+                    color: white;
+                    
+                    font-size: 32px;
+                }
+                    .precios {
+                        text-align: center;
+                        font-size: 28px;
+                    }
+                        .botones-ic {
+                            display: flex;
+                            justify-content: space-around;
+                            position: relative;
+                            top: 50px;
+                        }
+                            .ingredientes {                        
+                                text-decoration: none;
+                                color: #000;
+                                font-size: 1rem;
+                                font-weight: 400;
+                                font-style: italic;
+                                text-align: center;
+                                border-radius: 10px;
+                                padding: 15px;
+                                border-color: transparent;                       
+                                color: $maincolor;
+                            }
+                                .carrito {                            
+                                    width: 57px;
+                                    height: 48px;
+                                    color: $maincolor;
+                                } 
+            }               
+            
+        }   
+    }
+
+        //giftcard
+
+        .giftcard {
+            background-image: url(../IMG/bares-extranjeros-0.jpg);
+            background-size: cover;
+            div{
+                .gift {
+                    padding: 0%;
+                }
+                .texto2 {
+                    text-align: center;
+                    top: 40%;
+                    padding-top: 10%;
+                    font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            } 
+            div{ 
+                .giftcardimg {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .imagecard {
+                       display: flex;
+                    }
+                    .imagecard:hover {
+                        transform: translateY(-10px);
+                    }
+                }        
+            }    
+        }
+
+        //contacto
+        .fondo__contacto {
+            background-image: url(../IMG/clipping_MSvJ5N_b654.webp);
+            .titulo {
+                top: 20%;
+                color: aliceblue;        
+            }
+            .contacto {
+                width: 100%;
+            } 
+        }
+
+
+    .footer1 {
+        color: #868080;
+        text-align: center;
+        font-size: 15px;
+        background-color: $maincolor;
+        display: flex;
+        align-items: end;
+        justify-content: space-around;
+        padding-bottom: 130px;
+        padding-top: 25px;
+        div {
+            .h5-1 {
+                position: relative;
+                top: 60px;
+            }
+        }
+        div{
+            .h5-2 {
+                position: relative;
+                top: 60px;
+            }
+        }
+        div{
+            .h5-3 {
+                position: relative;
+                top: 78px;
+                
+            }
+                .botones {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 15px;
+                    position: relative;
+                    left: 10px;
+                    bottom: 5px;
+               
+                }   
+                    .botones2 {
+                        position: relative;
+                        
+                        left: 16px;
+                        
+                    }
+                        .botones3 {
+                            position: relative;
+                            left: 16px;
+                        
+                            
+                        }  
+        }
+        .derechos {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #868080;
+            padding: 6px;
+            color: $maincolor;
+            text-shadow: none;
+        }                  
+    }
+}

@@ -422,7 +422,7 @@ h1 {
 }
 
 .giftcard {
-  background-image: url(../IMG/bares-extranjeros-0.jpg);
+  background-image: url(../IMG/a_Nightba-z\ \(1\).jpg);
   background-size: cover;
 }
 .giftcard div .gift {
@@ -456,10 +456,6 @@ h1 {
   padding-left: 50px;
   padding-top: 50px;
   padding-right: 50px;
-  border-image: linear-gradient(to bottom, #5a0f0f, #868080);
-  border-image-outset: 0;
-  border-image-slice: 1;
-  border-image-width: 10px;
 }
 .giftcard div .giftcardimg .imagecard:hover {
   transform: translateY(-10px);
@@ -783,65 +779,38 @@ h1 {
   justify-content: space-around;
   padding-bottom: 160px;
 }
-
-.footer2 {
-  color: #868080;
-  text-align: center;
-  font-size: 20px;
-  background-color: #5a0f0f;
-  display: flex;
-  align-items: end;
-  justify-content: space-around;
-  padding-bottom: 160px;
-  margin-top: 80px;
-}
-
-h5 {
-  margin-top: 25px;
-}
-
-.h5-1 {
+.footer1 div .h5-1 {
   position: relative;
   top: 60px;
 }
-
-.h5-2 {
+.footer1 div .h5-2 {
   position: relative;
   top: 60px;
 }
-
-.h5-3 {
+.footer1 div .h5-3 {
   position: relative;
   top: 65px;
 }
-
-.botones {
+.footer1 div .botones {
   display: flex;
   justify-content: space-around;
   margin-top: 15px;
 }
-
-.botones2 {
+.footer1 div .botones2 {
   position: relative;
   bottom: 25px;
   left: 16px;
 }
-
-.botones3 {
+.footer1 div .botones3 {
   position: relative;
   left: 16px;
   bottom: 25px;
 }
-
-span {
-  font-size: 15px;
-}
-
-.derechos {
+.footer1 .derechos {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 99%;
+  width: 100%;
   background-color: #868080;
   padding: 6px;
   color: #5a0f0f;
@@ -849,17 +818,23 @@ span {
 }
 
 /* media queries */
-/* tablet */
 /* celu */
-@media only screen and (min-width: 320px) and (max-width: 575px) {
-  header {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  header nav {
+    text-decoration: none;
+  }
+  header nav ul {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    padding-bottom: 1%;
     display: flex;
     justify-content: space-around;
-    font-size: 7px;
   }
-  .logo-index {
-    width: 80px;
-    height: auto;
+  header nav ul li {
+    display: inline-block;
+    padding: 0%;
+    margin-right: 1px;
   }
   .section1 {
     background-color: #5a0f0f;
@@ -896,7 +871,7 @@ span {
   .section1 .padre1 .imagenindex {
     display: flex;
     width: 230px;
-    margin-left: 45px;
+    margin-left: 145px;
   }
   .fondo2 {
     background-image: url(../IMG/bares-speakeasy-mexico.gif);
@@ -920,10 +895,499 @@ span {
   }
   .fondo2 .container-video {
     height: auto;
+    margin: 0;
   }
   .fondo2 .container-video .card-video {
     width: 335px;
     height: 200px;
+  }
+  .divmenues {
+    background-size: 20px;
+  }
+  .divmenues .menues {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 55px;
+  }
+  .menu {
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 39px;
+    color: #5a0f0f;
+  }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor .contenedor-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #5a0f0f;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+  }
+  .contenedor .contenedor-img div .classh4 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+  }
+  .contenedor .contenedor-img div .precios {
+    text-align: center;
+    font-size: 28px;
+  }
+  .contenedor .contenedor-img div .botones-ic {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+  }
+  .contenedor .contenedor-img div .ingredientes {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    border-color: transparent;
+    color: #5a0f0f;
+  }
+  .contenedor .contenedor-img div .carrito {
+    width: 57px;
+    height: 48px;
+    color: #5a0f0f;
+  }
+  .contenedor1 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    color: #9e9999;
+  }
+  .contenedor2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor2 .contenedor2-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #9e9999;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+  }
+  .contenedor2 .contenedor2-img div .classh4 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+  }
+  .contenedor2 .contenedor2-img div .precios {
+    text-align: center;
+    font-size: 28px;
+  }
+  .contenedor2 .contenedor2-img div .botones-ic {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+  }
+  .contenedor2 .contenedor2-img div .ingredientes {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    border-color: transparent;
+    color: #5a0f0f;
+  }
+  .contenedor2 .contenedor2-img div .carrito {
+    width: 57px;
+    height: 48px;
+    color: #5a0f0f;
+  }
+  .giftcard {
+    background-image: url(../IMG/bares-extranjeros-0.jpg);
+    background-size: cover;
+  }
+  .giftcard div .gift {
+    padding: 0%;
+  }
+  .giftcard div .texto2 {
+    text-align: center;
+    top: 40%;
+    padding-top: 10%;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .giftcard div .giftcardimg {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .giftcard div .giftcardimg .imagecard {
+    display: flex;
+  }
+  .giftcard div .giftcardimg .imagecard:hover {
+    transform: translateY(-10px);
+  }
+  .fondo__contacto {
+    background-image: url(../IMG/clipping_MSvJ5N_b654.webp);
+  }
+  .fondo__contacto .titulo {
+    top: 20%;
+    color: aliceblue;
+  }
+  .fondo__contacto .contacto {
+    width: 100%;
+  }
+  .footer1 {
+    color: #868080;
+    text-align: center;
+    font-size: 9px;
+    background-color: #5a0f0f;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    padding-bottom: 160px;
+  }
+  .footer1 div .h5-1 {
+    position: relative;
+    top: 60px;
+  }
+  .footer1 div .h5-2 {
+    position: relative;
+    top: 60px;
+  }
+  .footer1 div .h5-3 {
+    position: relative;
+    top: 78px;
+  }
+  .footer1 div .botones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+  }
+  .footer1 div .botones2 {
+    position: relative;
+    left: 16px;
+  }
+  .footer1 div .botones3 {
+    position: relative;
+    left: 16px;
+  }
+  .footer1 .derechos {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #868080;
+    padding: 6px;
+    color: #5a0f0f;
+    text-shadow: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  header nav {
+    text-decoration: none;
+  }
+  header nav ul {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-around;
+  }
+  header nav ul li {
+    display: inline-block;
+    padding: 0%;
+    margin-right: 1px;
+  }
+  .section1 {
+    background-color: #5a0f0f;
+  }
+  .section1 .padre1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 52px;
+  }
+  .section1 .padre1 div .txtindex {
+    display: flex;
+    justify-content: center;
+  }
+  .section1 .padre1 div .texto1 {
+    border: 3px solid white;
+    height: 2px;
+    margin: 10px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-size: 25px;
+    margin-top: 35px;
+    padding-left: 20px;
+  }
+  .section1 .padre1 div .textoindex {
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .section1 .padre1 .imagenindex {
+    display: flex;
+    width: 230px;
+    margin-left: 145px;
+    display: none;
+    animation: none;
+  }
+  .fondo2 {
+    background-image: url(../IMG/bares-speakeasy-mexico.gif);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fondo2 div .h4 {
+    order: 3px solid white;
+    height: 2px;
+    margin: 35px 10px 10px;
+    padding: 10px 40px 40px;
+    text-align: center;
+    color: rgb(253, 253, 253);
+    font-size: 25px;
+  }
+  .fondo2 div .textoindex2 {
+    color: #f8f4f4;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+  }
+  .fondo2 .container-video {
+    height: auto;
+    margin: 0;
+  }
+  .fondo2 .container-video .card-video {
+    width: 335px;
+    height: 200px;
+  }
+  .divmenues {
+    background-size: 20px;
+  }
+  .divmenues .menues {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 55px;
+  }
+  .menu {
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 39px;
+    color: #5a0f0f;
+  }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor .contenedor-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #5a0f0f;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+  }
+  .contenedor .contenedor-img div .classh4 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+  }
+  .contenedor .contenedor-img div .precios {
+    text-align: center;
+    font-size: 28px;
+  }
+  .contenedor .contenedor-img div .botones-ic {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+  }
+  .contenedor .contenedor-img div .ingredientes {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    border-color: transparent;
+    color: #5a0f0f;
+  }
+  .contenedor .contenedor-img div .carrito {
+    width: 57px;
+    height: 48px;
+    color: #5a0f0f;
+  }
+  .contenedor1 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    color: #9e9999;
+  }
+  .contenedor2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor2 .contenedor2-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #9e9999;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+  }
+  .contenedor2 .contenedor2-img div .classh4 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+  }
+  .contenedor2 .contenedor2-img div .precios {
+    text-align: center;
+    font-size: 28px;
+  }
+  .contenedor2 .contenedor2-img div .botones-ic {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+  }
+  .contenedor2 .contenedor2-img div .ingredientes {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    border-color: transparent;
+    color: #5a0f0f;
+  }
+  .contenedor2 .contenedor2-img div .carrito {
+    width: 57px;
+    height: 48px;
+    color: #5a0f0f;
+  }
+  .giftcard {
+    background-image: url(../IMG/bares-extranjeros-0.jpg);
+    background-size: cover;
+  }
+  .giftcard div .gift {
+    padding: 0%;
+  }
+  .giftcard div .texto2 {
+    text-align: center;
+    top: 40%;
+    padding-top: 10%;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .giftcard div .giftcardimg {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .giftcard div .giftcardimg .imagecard {
+    display: flex;
+  }
+  .giftcard div .giftcardimg .imagecard:hover {
+    transform: translateY(-10px);
+  }
+  .fondo__contacto {
+    background-image: url(../IMG/clipping_MSvJ5N_b654.webp);
+  }
+  .fondo__contacto .titulo {
+    top: 20%;
+    color: aliceblue;
+  }
+  .fondo__contacto .contacto {
+    width: 100%;
+  }
+  .footer1 {
+    color: #868080;
+    text-align: center;
+    font-size: 15px;
+    background-color: #5a0f0f;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    padding-bottom: 130px;
+    padding-top: 25px;
+  }
+  .footer1 div .h5-1 {
+    position: relative;
+    top: 60px;
+  }
+  .footer1 div .h5-2 {
+    position: relative;
+    top: 60px;
+  }
+  .footer1 div .h5-3 {
+    position: relative;
+    top: 78px;
+  }
+  .footer1 div .botones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+  }
+  .footer1 div .botones2 {
+    position: relative;
+    left: 16px;
+  }
+  .footer1 div .botones3 {
+    position: relative;
+    left: 16px;
+  }
+  .footer1 .derechos {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #868080;
+    padding: 6px;
+    color: #5a0f0f;
+    text-shadow: none;
   }
 }
 
